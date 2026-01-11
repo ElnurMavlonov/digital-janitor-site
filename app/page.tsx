@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import {
-  Sparkles,
   FolderOpen,
   MousePointerClick,
   Shield,
@@ -17,6 +16,7 @@ import {
   Zap,
   Sun,
   Moon,
+  Sparkles,
 } from "lucide-react";
 
 // Download URL for the DMG
@@ -121,9 +121,13 @@ export default function Home() {
       >
         <div className="max-w-6xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-400 to-cyan-600 flex items-center justify-center shadow-lg shadow-cyan-500/25">
-              <Sparkles className="w-5 h-5 text-black" />
-            </div>
+            <Image
+              src="/icon.png"
+              alt="Digital Janitor"
+              width={40}
+              height={40}
+              className="rounded-xl shadow-lg shadow-cyan-500/25"
+            />
             <span className="text-lg font-semibold text-white">Digital Janitor</span>
           </div>
           <a
@@ -442,9 +446,13 @@ export default function Home() {
             <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-transparent to-purple-500/10" />
             
             <motion.div variants={fadeInUp} className="relative z-10">
-              <div className="w-20 h-20 rounded-3xl bg-gradient-to-br from-cyan-400 to-cyan-600 flex items-center justify-center mx-auto mb-8 shadow-2xl shadow-cyan-500/30">
-                <Sparkles className="w-10 h-10 text-black" />
-              </div>
+              <Image
+                src="/icon.png"
+                alt="Digital Janitor"
+                width={80}
+                height={80}
+                className="mx-auto mb-8 rounded-3xl shadow-2xl shadow-cyan-500/30"
+              />
               <h2 className="text-3xl md:text-5xl font-bold gradient-text mb-6">
                 Ready for a cleaner Mac?
               </h2>
@@ -472,9 +480,13 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             {/* Logo */}
             <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-cyan-400 to-cyan-600 flex items-center justify-center">
-                <Sparkles className="w-4 h-4 text-black" />
-              </div>
+              <Image
+                src="/icon.png"
+                alt="Digital Janitor"
+                width={32}
+                height={32}
+                className="rounded-lg"
+              />
               <span className="text-sm font-medium text-white/60">The Digital Janitor</span>
             </div>
 
